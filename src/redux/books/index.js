@@ -3,8 +3,8 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 export const loadBooks = createAsyncThunk(
   'books/loadBooks',
   async function() {
-    // const json = await fetch('https://gutendex.com/books').then(response => response.json());
-    // return json;
+    const json = await fetch('https://gutendex.com/books').then(response => response.json());
+    return json;
   }
 )
 

@@ -1,0 +1,17 @@
+.Item-button-like {
+  line-height: 0;
+  input {
+    display: none;
+  }
+  i {
+    cursor: pointer;
+    color: gray;
+    font-size: 40px;
+  }
+  input[type='checkbox']:checked+i {  
+    color: red;
+  }
+  &:hover i{
+    color: red;
+  }
+}
